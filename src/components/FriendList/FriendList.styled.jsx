@@ -25,13 +25,12 @@ export const Item = styled.li`
 
 export const Status = styled.span`
   background-color: ${props => {
-    switch (props.isOnline) {
-      case true:
-        return '#109187';
-      case false:
-        return '#D83A7A';
+    if (props.isOnline === true) {
+      return '#109187';
+    } else {
+      return '#D83A7A';
     }
-  }};
+  }}};
   border-radius: 50%;
   width: 15px;
   height: 15px;
