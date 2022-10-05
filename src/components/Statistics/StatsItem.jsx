@@ -1,12 +1,12 @@
-import css from './Statistics.module.css';
+import { Item, Label, Percentage } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
 export const StatsItem = ({ label, percentage }) => {
   return (
-    <li className={css.item} style={{ backgroundColor: getRandomHexColor() }}>
-      <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}%</span>
-    </li>
+    <Item style={{ backgroundColor: getRandomHexColor() }}>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
+    </Item>
   );
 };
 

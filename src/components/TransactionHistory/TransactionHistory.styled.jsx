@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const TransactionTable = styled.table`
   width: 500px;
   margin-left: auto;
@@ -18,8 +19,8 @@ export const TransactionItem = styled.td`
   padding: 8px;
   text-transform: capitalize;
 `;
-// export const transactionRow = styled.tr`
-//   &: nth-child(even);
-// `;
-
-// .transactionRow:nth-child(even)
+export const TransactionRow = styled.tr`
+  :nth-child(even) {
+    background-color: #f2f2f2;
+  }
+`;
