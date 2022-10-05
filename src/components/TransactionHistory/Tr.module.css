@@ -1,0 +1,23 @@
+/* .transactionHistory {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border-collapse: collapse;
+}
+.transactionTitle {
+  border: #ddd solid 1px;
+  padding: 12px 8px;
+  background-color: #109187;
+  color: white;
+  text-transform: uppercase;
+} */
+.transactionItem {
+  border: #eeeeee solid 1px;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+.transactionRow:nth-child(even) {
+  background-color: #f2f2f2;
+}

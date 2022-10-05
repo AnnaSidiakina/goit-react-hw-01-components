@@ -7,7 +7,7 @@ export const Container = styled.div`
   max-width: 300px;
 `;
 
-export const FriendsContainer = styled.ul`
+export const FriendsList = styled.ul`
   list-style: none;
   text-align: start;
 `;
