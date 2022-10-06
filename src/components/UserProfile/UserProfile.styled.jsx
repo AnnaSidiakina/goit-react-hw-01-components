@@ -2,52 +2,47 @@ import styled from 'styled-components';
 
 export const Profile = styled.div`
   max-width: 300px;
-  background-color: white;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  margin: ${p => p.theme.margin};
+  border: ${p => p.theme.borders.normal};
+  box-shadow: ${p => p.theme.shadows.boxShadow};
 `;
 export const Description = styled.div`
-  background-color: #f3f9fa;
-  padding: 20px;
+  background-color: ${p => p.theme.colors.background};
+  padding: ${p => p.theme.space[5]}px;
 `;
 export const Avatar = styled.img`
-  background-color: white;
-  border-radius: 50%;
+  background-color: ${p => p.theme.colors.backgroundSecond};
+  border-radius: ${p => p.theme.radii.round};
   width: 100px;
   height: 100px;
 `;
 export const Name = styled.p`
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
+  color: ${p => p.theme.colors.text};
+  font-size: ${p => p.theme.fontSizes.l};
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;
 export const Tag = styled.p`
-  color: #a3aaab;
-  font-size: 14px;
+  color: ${p => p.theme.colors.secondary};
+  font-size: ${p => p.theme.fontSizes.s};
 `;
 export const Location = styled.p`
-  color: #a3aaab;
-  font-size: 14px;
+color: ${p => p.theme.colors.secondary};
+font-size: ${p => p.theme.fontSizes.s};
 `;
 export const Stats = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
-  padding: 10px;
-  border-left: #eeeeee solid 1px;
-  border-right: #eeeeee solid 1px;
-  border-bottom: #eeeeee solid 1px;
+  padding: ${p => p.theme.space[4]}px;
+
 `;
 export const Label = styled.span`
-  color: #a3aaab;
+  color: ${p => p.theme.colors.secondary};
   display: block;
   width: 70px;
 `;
 export const Quantity = styled.span`
-  font-size: 14px;
-  color: black;
-  font-weight: 500;
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.text};
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;

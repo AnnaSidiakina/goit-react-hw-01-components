@@ -2,30 +2,28 @@ import styled from 'styled-components';
 
 export const StatisticSection = styled.section`
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin: ${p => p.theme.margin};
 `;
 export const StatList = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: ${p => p.theme.space[4]}px;
 `;
 export const Item = styled.li`
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: ${p => p.theme.space[3]}px;
+  padding-bottom: ${p => p.theme.space[3]}px;
   width: 80px;
-  border: #eeeeee solid 1px;
-  border-radius: 5px;
+  border: ${p => p.theme.borders.normal};
+  border-radius: ${p => p.theme.radii.normal};
 `;
 export const Label = styled.span`
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: ${p => p.theme.space[3]}px;
 `;
 export const Percentage = styled.span`
-  font-size: 16px;
+  font-size: ${p => p.theme.fontSizes.m};
 `;
 export const Title = styled.h2`
-  font-size: 20px;
+font: ${p => p.theme.fonts.heading};
+  font-size: ${p => p.theme.fontSizes.l};
 `;
